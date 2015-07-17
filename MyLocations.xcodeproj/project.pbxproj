@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		46634EC31B57B95400B38DE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46634EC21B57B95400B38DE7 /* AppDelegate.swift */; };
-		46634EC51B57B95400B38DE7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46634EC41B57B95400B38DE7 /* FirstViewController.swift */; };
+		46634EC51B57B95400B38DE7 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46634EC41B57B95400B38DE7 /* CurrentLocationViewController.swift */; };
 		46634EC71B57B95400B38DE7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46634EC61B57B95400B38DE7 /* SecondViewController.swift */; };
 		46634ECA1B57B95400B38DE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46634EC81B57B95400B38DE7 /* Main.storyboard */; };
 		46634ECC1B57B95400B38DE7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46634ECB1B57B95400B38DE7 /* Images.xcassets */; };
@@ -30,7 +30,7 @@
 		46634EBD1B57B95400B38DE7 /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46634EC11B57B95400B38DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46634EC21B57B95400B38DE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46634EC41B57B95400B38DE7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		46634EC41B57B95400B38DE7 /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
 		46634EC61B57B95400B38DE7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		46634EC91B57B95400B38DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46634ECB1B57B95400B38DE7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				46634EC21B57B95400B38DE7 /* AppDelegate.swift */,
-				46634EC41B57B95400B38DE7 /* FirstViewController.swift */,
+				46634EC41B57B95400B38DE7 /* CurrentLocationViewController.swift */,
 				46634EC61B57B95400B38DE7 /* SecondViewController.swift */,
 				46634EC81B57B95400B38DE7 /* Main.storyboard */,
 				46634ECB1B57B95400B38DE7 /* Images.xcassets */,
@@ -217,7 +217,7 @@
 			files = (
 				46634EC71B57B95400B38DE7 /* SecondViewController.swift in Sources */,
 				46634EC31B57B95400B38DE7 /* AppDelegate.swift in Sources */,
-				46634EC51B57B95400B38DE7 /* FirstViewController.swift in Sources */,
+				46634EC51B57B95400B38DE7 /* CurrentLocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +413,7 @@
 				46634EE01B57B95400B38DE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46634EE11B57B95400B38DE7 /* Build configuration list for PBXNativeTarget "MyLocationsTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +422,7 @@
 				46634EE31B57B95400B38DE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
