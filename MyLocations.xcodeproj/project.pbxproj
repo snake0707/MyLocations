@@ -14,6 +14,9 @@
 		46634ECC1B57B95400B38DE7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46634ECB1B57B95400B38DE7 /* Images.xcassets */; };
 		46634ECF1B57B95400B38DE7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46634ECD1B57B95400B38DE7 /* LaunchScreen.xib */; };
 		46634EDB1B57B95400B38DE7 /* MyLocationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46634EDA1B57B95400B38DE7 /* MyLocationsTests.swift */; };
+		4669B4B61B5CD6B1002940F6 /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4669B4B51B5CD6B1002940F6 /* LocationDetailViewController.swift */; };
+		4669B4BA1B5CFBD6002940F6 /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4669B4B91B5CFBD6002940F6 /* CategoryPickerViewController.swift */; };
+		4669B4BC1B5D1F24002940F6 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4669B4BB1B5D1F24002940F6 /* HudView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		46634ED41B57B95400B38DE7 /* MyLocationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLocationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46634ED91B57B95400B38DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46634EDA1B57B95400B38DE7 /* MyLocationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationsTests.swift; sourceTree = "<group>"; };
+		4669B4B51B5CD6B1002940F6 /* LocationDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
+		4669B4B91B5CFBD6002940F6 /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
+		4669B4BB1B5D1F24002940F6 /* HudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +86,10 @@
 			isa = PBXGroup;
 			children = (
 				46634EC21B57B95400B38DE7 /* AppDelegate.swift */,
+				4669B4B91B5CFBD6002940F6 /* CategoryPickerViewController.swift */,
 				46634EC41B57B95400B38DE7 /* CurrentLocationViewController.swift */,
+				4669B4BB1B5D1F24002940F6 /* HudView.swift */,
+				4669B4B51B5CD6B1002940F6 /* LocationDetailViewController.swift */,
 				46634EC61B57B95400B38DE7 /* SecondViewController.swift */,
 				46634EC81B57B95400B38DE7 /* Main.storyboard */,
 				46634ECB1B57B95400B38DE7 /* Images.xcassets */,
@@ -215,8 +224,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4669B4B61B5CD6B1002940F6 /* LocationDetailViewController.swift in Sources */,
 				46634EC71B57B95400B38DE7 /* SecondViewController.swift in Sources */,
+				4669B4BC1B5D1F24002940F6 /* HudView.swift in Sources */,
 				46634EC31B57B95400B38DE7 /* AppDelegate.swift in Sources */,
+				4669B4BA1B5CFBD6002940F6 /* CategoryPickerViewController.swift in Sources */,
 				46634EC51B57B95400B38DE7 /* CurrentLocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
