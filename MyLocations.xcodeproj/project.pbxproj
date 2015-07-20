@@ -17,6 +17,7 @@
 		4669B4B61B5CD6B1002940F6 /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4669B4B51B5CD6B1002940F6 /* LocationDetailViewController.swift */; };
 		4669B4BA1B5CFBD6002940F6 /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4669B4B91B5CFBD6002940F6 /* CategoryPickerViewController.swift */; };
 		4669B4BC1B5D1F24002940F6 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4669B4BB1B5D1F24002940F6 /* HudView.swift */; };
+		DAEFB1261B5D3FA000BA8BF0 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEFB1251B5D3FA000BA8BF0 /* Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		4669B4B51B5CD6B1002940F6 /* LocationDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
 		4669B4B91B5CFBD6002940F6 /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 		4669B4BB1B5D1F24002940F6 /* HudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
+		DAEFB1251B5D3FA000BA8BF0 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +90,9 @@
 				46634EC21B57B95400B38DE7 /* AppDelegate.swift */,
 				4669B4B91B5CFBD6002940F6 /* CategoryPickerViewController.swift */,
 				46634EC41B57B95400B38DE7 /* CurrentLocationViewController.swift */,
-				4669B4BB1B5D1F24002940F6 /* HudView.swift */,
 				4669B4B51B5CD6B1002940F6 /* LocationDetailViewController.swift */,
+				DAEFB1251B5D3FA000BA8BF0 /* Functions.swift */,
+				4669B4BB1B5D1F24002940F6 /* HudView.swift */,
 				46634EC61B57B95400B38DE7 /* SecondViewController.swift */,
 				46634EC81B57B95400B38DE7 /* Main.storyboard */,
 				46634ECB1B57B95400B38DE7 /* Images.xcassets */,
@@ -227,6 +230,7 @@
 				4669B4B61B5CD6B1002940F6 /* LocationDetailViewController.swift in Sources */,
 				46634EC71B57B95400B38DE7 /* SecondViewController.swift in Sources */,
 				4669B4BC1B5D1F24002940F6 /* HudView.swift in Sources */,
+				DAEFB1261B5D3FA000BA8BF0 /* Functions.swift in Sources */,
 				46634EC31B57B95400B38DE7 /* AppDelegate.swift in Sources */,
 				4669B4BA1B5CFBD6002940F6 /* CategoryPickerViewController.swift in Sources */,
 				46634EC51B57B95400B38DE7 /* CurrentLocationViewController.swift in Sources */,
