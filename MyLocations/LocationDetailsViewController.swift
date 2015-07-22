@@ -17,7 +17,7 @@ private let dateFormatter: NSDateFormatter = {
     return formatter
 }()
 
-class LocationDetailViewController: UITableViewController {
+class LocationDetailsViewController: UITableViewController {
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var latitudeLabel: UILabel!
@@ -34,11 +34,29 @@ class LocationDetailViewController: UITableViewController {
     var managedObjectContext: NSManagedObjectContext!
     var date = NSDate()
     
+    var locationToEdit: Location? {
+        didSet {
+            if let location = locationToEdit {
+                descriptionText = location.locationDescription
+                categoryName = location.category
+                date = location.date
+                coordinate = CLLocationCoordinate2DMake(location.latitude, location.longitude)
+                placemark = location.placemark
+            }
+        }
+    }
+    
     @IBAction func done() {
         let hudView = HudView.hudInView(navigationController!.view, animated: true)
-        hudView.text = "Tagged"
         
-        let location = NSEntityDescription.insertNewObjectForEntityForName("Location", inManagedObjectContext: managedObjectContext) as! Location
+        var location: Location
+        if let temp = locationToEdit {
+            hudView.text = "Updated"
+            location = temp
+        } else {
+            hudView.text = "Tagged"
+            location = NSEntityDescription.insertNewObjectForEntityForName("Location", inManagedObjectContext: managedObjectContext) as! Location
+        }
         
         location.locationDescription = descriptionText
         location.category = categoryName
@@ -71,6 +89,10 @@ class LocationDetailViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let location = locationToEdit {
+            title = "Edit Location"
+        }
         
         descriptionTextView.text = descriptionText
         categoryLabel.text = categoryName
@@ -156,7 +178,7 @@ class LocationDetailViewController: UITableViewController {
     }
 }
 
-extension LocationDetailViewController: UITextViewDelegate {
+extension LocationDetailsViewController: UITextViewDelegate {
     func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
         descriptionText = (textView.text as NSString).stringByReplacingCharactersInRange(range, withString: text)
         return true
