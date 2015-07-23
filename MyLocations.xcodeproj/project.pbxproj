@@ -114,9 +114,9 @@
 				4669B4B51B5CD6B1002940F6 /* LocationDetailsViewController.swift */,
 				46628F661B5E740B0016DBA3 /* LocationsViewController.swift */,
 				46634EC81B57B95400B38DE7 /* Main.storyboard */,
+				46667AC41B610AB60093C9D5 /* MapViewController.swift */,
 				46634EC61B57B95400B38DE7 /* SecondViewController.swift */,
 				46634EC01B57B95400B38DE7 /* Supporting Files */,
-				46667AC41B610AB60093C9D5 /* MapViewController.swift */,
 			);
 			path = MyLocations;
 			sourceTree = "<group>";
