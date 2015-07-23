@@ -16,6 +16,8 @@
 		46634ECF1B57B95400B38DE7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46634ECD1B57B95400B38DE7 /* LaunchScreen.xib */; };
 		46634EDB1B57B95400B38DE7 /* MyLocationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46634EDA1B57B95400B38DE7 /* MyLocationsTests.swift */; };
 		46667AC11B5F51910093C9D5 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46667AC01B5F51910093C9D5 /* LocationCell.swift */; };
+		46667AC31B60FE220093C9D5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46667AC21B60FE220093C9D5 /* MapKit.framework */; };
+		46667AC51B610AB60093C9D5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46667AC41B610AB60093C9D5 /* MapViewController.swift */; };
 		4669B4B61B5CD6B1002940F6 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4669B4B51B5CD6B1002940F6 /* LocationDetailsViewController.swift */; };
 		4669B4BA1B5CFBD6002940F6 /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4669B4B91B5CFBD6002940F6 /* CategoryPickerViewController.swift */; };
 		4669B4BC1B5D1F24002940F6 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4669B4BB1B5D1F24002940F6 /* HudView.swift */; };
@@ -48,6 +50,8 @@
 		46634ED91B57B95400B38DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46634EDA1B57B95400B38DE7 /* MyLocationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationsTests.swift; sourceTree = "<group>"; };
 		46667AC01B5F51910093C9D5 /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		46667AC21B60FE220093C9D5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		46667AC41B610AB60093C9D5 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4669B4B51B5CD6B1002940F6 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
 		4669B4B91B5CFBD6002940F6 /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 		4669B4BB1B5D1F24002940F6 /* HudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46667AC31B60FE220093C9D5 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 		46634EB41B57B95400B38DE7 = {
 			isa = PBXGroup;
 			children = (
+				46667AC21B60FE220093C9D5 /* MapKit.framework */,
 				46634EBF1B57B95400B38DE7 /* MyLocations */,
 				46634ED71B57B95400B38DE7 /* MyLocationsTests */,
 				46634EBE1B57B95400B38DE7 /* Products */,
@@ -110,6 +116,7 @@
 				46634EC81B57B95400B38DE7 /* Main.storyboard */,
 				46634EC61B57B95400B38DE7 /* SecondViewController.swift */,
 				46634EC01B57B95400B38DE7 /* Supporting Files */,
+				46667AC41B610AB60093C9D5 /* MapViewController.swift */,
 			);
 			path = MyLocations;
 			sourceTree = "<group>";
@@ -246,6 +253,7 @@
 				4669B4BC1B5D1F24002940F6 /* HudView.swift in Sources */,
 				DAEFB12F1B5D52A200BA8BF0 /* Location.swift in Sources */,
 				46667AC11B5F51910093C9D5 /* LocationCell.swift in Sources */,
+				46667AC51B610AB60093C9D5 /* MapViewController.swift in Sources */,
 				DAEFB1261B5D3FA000BA8BF0 /* Functions.swift in Sources */,
 				46634EC31B57B95400B38DE7 /* AppDelegate.swift in Sources */,
 				4669B4BA1B5CFBD6002940F6 /* CategoryPickerViewController.swift in Sources */,
