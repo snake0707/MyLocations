@@ -11,7 +11,7 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>19B956FC38697CA1E3FB4384876469C7D682CB86</key>
-		<string>https://github.com/snake0707/MyLocations.git</string>
+		<string>github.com:snake0707/MyLocations.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>MyLocations.xcodeproj/project.xcworkspace</string>
@@ -21,7 +21,7 @@
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/snake0707/MyLocations.git</string>
+	<string>github.com:snake0707/MyLocations.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
