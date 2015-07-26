@@ -38,6 +38,8 @@ class LocationDetailsViewController: UITableViewController {
     
     var image: UIImage?
     
+    var observer: AnyObject!
+    
     var locationToEdit: Location? {
         didSet {
             if let location = locationToEdit {
@@ -60,6 +62,7 @@ class LocationDetailsViewController: UITableViewController {
         } else {
             hudView.text = "Tagged"
             location = NSEntityDescription.insertNewObjectForEntityForName("Location", inManagedObjectContext: managedObjectContext) as! Location
+            location.photoID = nil
         }
         
         location.locationDescription = descriptionText
@@ -68,6 +71,19 @@ class LocationDetailsViewController: UITableViewController {
         location.longitude = coordinate.longitude
         location.date = date
         location.placemark = placemark
+        
+        if let image = image {
+            if !location.hasPhoto {
+                location.photoID = Location.nextPhotoID()
+            }
+            
+            let data = UIImageJPEGRepresentation(image, 0.5)
+            
+            var error: NSError?
+            if !data.writeToFile(location.photoPath, options: .DataWritingAtomic, error: &error) {
+                println("Error writing file: \(error)")
+            }
+        }
         
         var error: NSError?
         if !managedObjectContext.save(&error) {
@@ -115,6 +131,8 @@ class LocationDetailsViewController: UITableViewController {
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: Selector("hideKeyboard:"))
         gestureRecognizer.cancelsTouchesInView = false
         tableView.addGestureRecognizer(gestureRecognizer)
+        
+        listenForBackgroundNotification()
     }
     
     func hideKeyboard(gestureRecognizer: UIGestureRecognizer) {
@@ -158,6 +176,26 @@ class LocationDetailsViewController: UITableViewController {
         imageView.hidden = false
         imageView.frame = CGRect(x: 10, y: 10, width: 260, height: 260 / ratio)
         addPhotoLabel.hidden = true
+    }
+    
+    func listenForBackgroundNotification() {
+         observer = NSNotificationCenter.defaultCenter().addObserverForName(UIApplicationDidEnterBackgroundNotification, object: nil, queue: NSOperationQueue.mainQueue()) { [weak self] nofification in
+            if let strongSelf = self {
+                if strongSelf.presentedViewController != nil {
+                    strongSelf.dismissViewControllerAnimated(false, completion: nil)
+                }
+                strongSelf.descriptionTextView.resignFirstResponder()
+            }
+//            if self.presentedViewController != nil {
+//                self.dismissViewControllerAnimated(false, completion: nil)
+//            }
+//            self.descriptionTextView.resignFirstResponder()
+        }
+    }
+    
+    deinit {
+        println("*** deinit \(self)")
+        NSNotificationCenter.defaultCenter().removeObserver(observer)
     }
     
     // MARK: - UITableViewDelegate

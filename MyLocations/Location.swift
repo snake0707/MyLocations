@@ -20,6 +20,8 @@ class Location: NSManagedObject, MKAnnotation {
     @NSManaged var category: String
     @NSManaged var placemark: CLPlacemark?
     
+    @NSManaged var photoID: NSNumber?
+    
     var coordinate: CLLocationCoordinate2D {
         return CLLocationCoordinate2DMake(latitude, longitude)
     }
@@ -34,6 +36,28 @@ class Location: NSManagedObject, MKAnnotation {
     
     var subtitle: String! {
         return category
+    }
+    
+    var photoImage: UIImage? {
+        return UIImage(contentsOfFile: photoPath)
+    }
+    
+    var hasPhoto: Bool {
+        return photoID != nil
+    }
+    
+    var photoPath: String {
+        assert(photoID != nil, "No photo ID set")
+        let filename = "Photo-\(photoID!.integerValue).jpg"
+        return applicationDocumentsDirectory.stringByAppendingPathComponent(filename)
+    }
+    
+    class func nextPhotoID() -> Int {
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        let currentID = userDefaults.integerForKey("PhotoID")
+        userDefaults.setInteger(currentID + 1, forKey: "PhotoID")
+        userDefaults.synchronize()
+        return currentID
     }
 
 }
