@@ -110,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				46634EC21B57B95400B38DE7 /* AppDelegate.swift */,
-				4671F3971B6903F000D3E572 /* MyImagePickerController.swift */,
 				4669B4B91B5CFBD6002940F6 /* CategoryPickerViewController.swift */,
 				46634EC41B57B95400B38DE7 /* CurrentLocationViewController.swift */,
 				DAEFB1271B5D4D0000BA8BF0 /* DataModel.xcdatamodeld */,
@@ -121,14 +120,15 @@
 				DAEFB12E1B5D52A200BA8BF0 /* Location.swift */,
 				46667AC01B5F51910093C9D5 /* LocationCell.swift */,
 				4669B4B51B5CD6B1002940F6 /* LocationDetailsViewController.swift */,
-				4671F3931B6902F000D3E572 /* MyTabBarController.swift */,
 				46628F661B5E740B0016DBA3 /* LocationsViewController.swift */,
 				46634EC81B57B95400B38DE7 /* Main.storyboard */,
 				46667AC41B610AB60093C9D5 /* MapViewController.swift */,
+				4671F3971B6903F000D3E572 /* MyImagePickerController.swift */,
+				4671F3951B69038800D3E572 /* MyNavigationController.swift */,
+				4671F3931B6902F000D3E572 /* MyTabBarController.swift */,
+				4671F3911B68F7D900D3E572 /* String+AddText.swift */,
 				46634EC01B57B95400B38DE7 /* Supporting Files */,
 				4673C6DB1B678FCB00A5C06B /* UIImage+Resize.swift */,
-				4671F3911B68F7D900D3E572 /* String+AddText.swift */,
-				4671F3951B69038800D3E572 /* MyNavigationController.swift */,
 			);
 			path = MyLocations;
 			sourceTree = "<group>";
