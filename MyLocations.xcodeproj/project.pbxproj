@@ -10,7 +10,6 @@
 		46628F671B5E740B0016DBA3 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46628F661B5E740B0016DBA3 /* LocationsViewController.swift */; };
 		46634EC31B57B95400B38DE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46634EC21B57B95400B38DE7 /* AppDelegate.swift */; };
 		46634EC51B57B95400B38DE7 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46634EC41B57B95400B38DE7 /* CurrentLocationViewController.swift */; };
-		46634EC71B57B95400B38DE7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46634EC61B57B95400B38DE7 /* SecondViewController.swift */; };
 		46634ECA1B57B95400B38DE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46634EC81B57B95400B38DE7 /* Main.storyboard */; };
 		46634ECC1B57B95400B38DE7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46634ECB1B57B95400B38DE7 /* Images.xcassets */; };
 		46634ECF1B57B95400B38DE7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46634ECD1B57B95400B38DE7 /* LaunchScreen.xib */; };
@@ -44,7 +43,6 @@
 		46634EC11B57B95400B38DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46634EC21B57B95400B38DE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46634EC41B57B95400B38DE7 /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
-		46634EC61B57B95400B38DE7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		46634EC91B57B95400B38DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46634ECB1B57B95400B38DE7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		46634ECE1B57B95400B38DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 				46628F661B5E740B0016DBA3 /* LocationsViewController.swift */,
 				46634EC81B57B95400B38DE7 /* Main.storyboard */,
 				46667AC41B610AB60093C9D5 /* MapViewController.swift */,
-				46634EC61B57B95400B38DE7 /* SecondViewController.swift */,
 				46634EC01B57B95400B38DE7 /* Supporting Files */,
 				4673C6DB1B678FCB00A5C06B /* UIImage+Resize.swift */,
 				4671F3911B68F7D900D3E572 /* String+AddText.swift */,
@@ -255,7 +252,6 @@
 				4669B4B61B5CD6B1002940F6 /* LocationDetailsViewController.swift in Sources */,
 				46628F671B5E740B0016DBA3 /* LocationsViewController.swift in Sources */,
 				DAEFB1291B5D4D0000BA8BF0 /* DataModel.xcdatamodeld in Sources */,
-				46634EC71B57B95400B38DE7 /* SecondViewController.swift in Sources */,
 				4669B4BC1B5D1F24002940F6 /* HudView.swift in Sources */,
 				4673C6DC1B678FCB00A5C06B /* UIImage+Resize.swift in Sources */,
 				DAEFB12F1B5D52A200BA8BF0 /* Location.swift in Sources */,
