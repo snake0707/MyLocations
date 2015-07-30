@@ -12,7 +12,6 @@
 		46634EC51B57B95400B38DE7 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46634EC41B57B95400B38DE7 /* CurrentLocationViewController.swift */; };
 		46634ECA1B57B95400B38DE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46634EC81B57B95400B38DE7 /* Main.storyboard */; };
 		46634ECC1B57B95400B38DE7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46634ECB1B57B95400B38DE7 /* Images.xcassets */; };
-		46634ECF1B57B95400B38DE7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46634ECD1B57B95400B38DE7 /* LaunchScreen.xib */; };
 		46634EDB1B57B95400B38DE7 /* MyLocationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46634EDA1B57B95400B38DE7 /* MyLocationsTests.swift */; };
 		46667AC11B5F51910093C9D5 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46667AC01B5F51910093C9D5 /* LocationCell.swift */; };
 		46667AC31B60FE220093C9D5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46667AC21B60FE220093C9D5 /* MapKit.framework */; };
@@ -49,7 +48,6 @@
 		46634EC41B57B95400B38DE7 /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
 		46634EC91B57B95400B38DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46634ECB1B57B95400B38DE7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		46634ECE1B57B95400B38DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		46634ED41B57B95400B38DE7 /* MyLocationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLocationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46634ED91B57B95400B38DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46634EDA1B57B95400B38DE7 /* MyLocationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationsTests.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 				DAEFB1251B5D3FA000BA8BF0 /* Functions.swift */,
 				4669B4BB1B5D1F24002940F6 /* HudView.swift */,
 				46634ECB1B57B95400B38DE7 /* Images.xcassets */,
-				46634ECD1B57B95400B38DE7 /* LaunchScreen.xib */,
 				DAEFB12E1B5D52A200BA8BF0 /* Location.swift */,
 				46667AC01B5F51910093C9D5 /* LocationCell.swift */,
 				4669B4B51B5CD6B1002940F6 /* LocationDetailsViewController.swift */,
@@ -250,7 +247,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				46634ECA1B57B95400B38DE7 /* Main.storyboard in Resources */,
-				46634ECF1B57B95400B38DE7 /* LaunchScreen.xib in Resources */,
 				46B860AE1B6A037A00D83229 /* Sound.caf in Resources */,
 				46634ECC1B57B95400B38DE7 /* Images.xcassets in Resources */,
 			);
@@ -314,14 +310,6 @@
 				46634EC91B57B95400B38DE7 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		46634ECD1B57B95400B38DE7 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				46634ECE1B57B95400B38DE7 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -412,6 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MyLocations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,6 +411,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MyLocations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
