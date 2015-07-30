@@ -10,6 +10,7 @@ import UIKit
 import CoreLocation
 import CoreData
 import QuartzCore
+import AudioToolbox
 
 class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate {
     
@@ -24,6 +25,8 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     var lastGeocodingError: NSError?
     
     var timer: NSTimer?
+    
+    var soundID: SystemSoundID = 0
     
     var managedObjectContext: NSManagedObjectContext!
     
@@ -87,6 +90,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
         super.viewDidLoad()
         updateLabels()
         configureGetButton()
+        loadSoundEffect("Sound.caf")
     }
 
     override func didReceiveMemoryWarning() {
@@ -360,6 +364,10 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
                     
                     self.lastGeocodingError = error
                     if error == nil && !placemarks.isEmpty {
+                        if self.placemark == nil {
+                            println("FIRST TIME!")
+                            self.playSoundEffect()
+                        }
                         self.placemark = placemarks.last as? CLPlacemark
                     } else {
                         self.placemark = nil
@@ -379,6 +387,33 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
                 configureGetButton()
             }
         }
+    }
+    
+    // MARK: - Sound Effect
+    
+    func loadSoundEffect(name: String) {
+        if let path = NSBundle.mainBundle().pathForResource(name, ofType: nil) {
+            let fileURL = NSURL.fileURLWithPath(path, isDirectory: false)
+            if fileURL == nil {
+                println("NSURL is nil for path: \(path)")
+                return
+            }
+            
+            let error = AudioServicesCreateSystemSoundID(fileURL, &soundID)
+            if Int(error) != kAudioServicesNoError {
+                println("Error code \(error) loading sound at path: \(path)")
+                return
+            }
+        }
+    }
+    
+    func unloadSoundEffect() {
+        AudioServicesDisposeSystemSoundID(soundID)
+        soundID = 0
+    }
+    
+    func playSoundEffect() {
+        AudioServicesPlaySystemSound(soundID)
     }
 }
 

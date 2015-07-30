@@ -25,6 +25,7 @@
 		4671F3961B69038800D3E572 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4671F3951B69038800D3E572 /* MyNavigationController.swift */; };
 		4671F3981B6903F000D3E572 /* MyImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4671F3971B6903F000D3E572 /* MyImagePickerController.swift */; };
 		4673C6DC1B678FCB00A5C06B /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4673C6DB1B678FCB00A5C06B /* UIImage+Resize.swift */; };
+		46B860AE1B6A037A00D83229 /* Sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = 46B860AD1B6A037A00D83229 /* Sound.caf */; };
 		DAEFB1261B5D3FA000BA8BF0 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEFB1251B5D3FA000BA8BF0 /* Functions.swift */; };
 		DAEFB1291B5D4D0000BA8BF0 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAEFB1271B5D4D0000BA8BF0 /* DataModel.xcdatamodeld */; };
 		DAEFB12F1B5D52A200BA8BF0 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEFB12E1B5D52A200BA8BF0 /* Location.swift */; };
@@ -63,6 +64,7 @@
 		4671F3951B69038800D3E572 /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
 		4671F3971B6903F000D3E572 /* MyImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyImagePickerController.swift; sourceTree = "<group>"; };
 		4673C6DB1B678FCB00A5C06B /* UIImage+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
+		46B860AD1B6A037A00D83229 /* Sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sound.caf; sourceTree = "<group>"; };
 		DAEFB1251B5D3FA000BA8BF0 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		DAEFB1281B5D4D0000BA8BF0 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		DAEFB12E1B5D52A200BA8BF0 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				4671F3971B6903F000D3E572 /* MyImagePickerController.swift */,
 				4671F3951B69038800D3E572 /* MyNavigationController.swift */,
 				4671F3931B6902F000D3E572 /* MyTabBarController.swift */,
+				46B860AC1B6A037A00D83229 /* Sound */,
 				4671F3911B68F7D900D3E572 /* String+AddText.swift */,
 				46634EC01B57B95400B38DE7 /* Supporting Files */,
 				4673C6DB1B678FCB00A5C06B /* UIImage+Resize.swift */,
@@ -156,6 +159,14 @@
 				46634ED91B57B95400B38DE7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46B860AC1B6A037A00D83229 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				46B860AD1B6A037A00D83229 /* Sound.caf */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +251,7 @@
 			files = (
 				46634ECA1B57B95400B38DE7 /* Main.storyboard in Resources */,
 				46634ECF1B57B95400B38DE7 /* LaunchScreen.xib in Resources */,
+				46B860AE1B6A037A00D83229 /* Sound.caf in Resources */,
 				46634ECC1B57B95400B38DE7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
